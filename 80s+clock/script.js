@@ -1,8 +1,10 @@
 function currentTime() {
-    var date = new Date();
-    var hour = date.getHours();
-    var min = date.getMinutes();
-    var sec = date.getSeconds();
+    let date = new Date();
+    let hour = date.getHours();
+    let min = date.getMinutes();
+    let sec = date.getSeconds();
+    let day = date.getDay();
+    changeDay(day);
     hour = updateTime(hour);
     min = updateTime(min);
     sec = updateTime(sec);
@@ -16,3 +18,9 @@ function updateTime(k) {
     return k
 }
 currentTime(); /* calling currentTime() function to initiate the process */
+
+function changeDay(dat) {
+    //console.log(dat)
+    document.getElementById(dat).style.textShadow = "0px 0px 22px #FFFFFF";
+    document.getElementById(dat).style.color = "#d9e1e4";
+}

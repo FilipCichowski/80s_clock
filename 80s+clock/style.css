@@ -21,9 +21,18 @@ p {
   top: 50%;
   transform: translate(-50%, -50%);
   color: #daf6ff;
-  text-shadow: 0 0 20px rgba(10, 175, 230, 1), 0 0 20px rgba(10, 175, 230, 0);
+  text-shadow: 0 0 20px rgb(19, 154, 199), 0 0 20px rgba(10, 175, 230, 0);
   font-size: 25vh;
 }
 .days {
-  font-size: 16px;
+  color: #9eb9c5;
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.days div {
+  margin-left: 9px;
 }
